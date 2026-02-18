@@ -4,10 +4,22 @@
   "description": "This is the book order project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "SET DEBUG=order: * & SET NODE_ENV=prod & node index.js",
+    "dev": "SET DEBUG=order: * & SET NODE_ENV=prod & node index.js",
+    "lint-fix":"eslint. --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "debug": "^4.4.3",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.0",
+    "globals": "^17.3.0"
+  }
 }
